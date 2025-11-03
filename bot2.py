@@ -23,7 +23,7 @@ CANAL_LINK2 = os.environ.get("CANAL_LINK2")
 IMAGE_PATH2 = os.environ.get("IMAGE_PATH2", "assets/lara.jpg")
 LINK = "https://onlyfans.com/itslaramoore"
 CANAL3 ="https://t.me/+x7w3ARZ7D89mNzRk"
-BOT_USERNAME = "@LaraCheckBot"  # Nom de ton bot
+BOT_USERNAME = "LaraCheckBot"  # Nom de ton bot
 
 if not TOKEN2:
     logging.error("❌ TOKEN manquant ! Vérifie TELEGRAM_TOKEN2 dans les variables Render.")
@@ -135,4 +135,5 @@ app_bot.add_handler(ChatJoinRequestHandler(on_join_request))
 if __name__ == "__main__":
     logging.info("🚀 Lancement du bot2 en mode POLLING (Render Background Worker)")
     app_bot.run_polling(drop_pending_updates=True)
+
 
