@@ -42,6 +42,7 @@ WELCOME_MESSAGE = (
     "Bienvenue sur le canal de Lara 💋\n"
     "C'est ici que l'on va pouvoir faire connaissance !\n\n"
     "Avant d'accéder à mon canal privé 🔞\n\n"
+    "Follow mon insta pour que je t'accepte rapidement 😘\nhttps://www.instagram.com/itslaramxre"
     "Est-ce que tu es bien majeur ? 😏"
 )
 
@@ -135,6 +136,7 @@ app_bot.add_handler(ChatJoinRequestHandler(on_join_request))
 if __name__ == "__main__":
     logging.info("🚀 Lancement du bot2 en mode POLLING (Render Background Worker)")
     app_bot.run_polling(drop_pending_updates=True)
+
 
 
 
